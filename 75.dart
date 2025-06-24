@@ -1,5 +1,16 @@
-void main(){
-  List<int> nums =[0,1,3,0,4,0];
-  nums.sort();
-  print(nums);
+void main() {
+  Solution solution = Solution();
+
+  List<int> colors = [2, 0, 2, 1, 1, 0];
+  print("Before sorting: $colors");
+
+  solution.sortColors(colors);
+
+  print("After sorting: $colors");
+}
+
+class Solution {
+  void sortColors(List<int> nums) {
+    nums.sort(); 
+  }
 }
